@@ -1,0 +1,61 @@
+﻿@model List<CarShop.Web.ViewModels.CarListViewModel>
+@{
+    var total = (int?)ViewBag.Total ?? 0;
+    var page = (int?)ViewBag.Page ?? 1;
+    var size = (int?)ViewBag.PageSize ?? 20;
+    int totalPages = (int)Math.Ceiling((double)total / size);
+}
+
+<div class="container py-5">
+    <h1>Inventory Management</h1>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Current Stock</th>
+                <th>Add Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@car.Name</td>
+                    <td>@car.Brand</td>
+                    <td>@car.Price.ToString("C")</td>
+                    <td>@car.Stock</td>
+                    <td>
+                        <form asp-action="AddStock" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@car.Id" />
+                            <input type="number" name="quantity" value="1" min="1" class="form-control d-inline w-auto" style="width:100px;" />
+                            <button type="submit" class="btn btn-sm btn-success">Add</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (totalPages > 1)
+    {
+        <nav>
+            <ul class="pagination">
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == page ? "active" : "")">
+                        <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+</div>

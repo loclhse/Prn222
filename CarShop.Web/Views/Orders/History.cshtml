@@ -1,0 +1,68 @@
+﻿@model List<OrderViewModel>
+
+<div class="container py-5">
+    <h1 class="mb-4"><i class="bi bi-bag-check"></i> My Orders</h1>
+    
+    @if(!Model.Any())
+    {
+        <div class="alert alert-info">
+            <i class="bi bi-info-circle"></i> You haven't placed any orders yet.
+            <a href="/Cars" class="alert-link">Browse our inventory</a> to get started!
+        </div>
+    }
+    else
+    {
+        @foreach(var order in Model)
+        {
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Order #@order.Id</h5>
+                            <small>@order.CreatedAt.ToString("MMMM dd, yyyy h:mm tt")</small>
+                        </div>
+                        <span class="badge bg-light text-dark fs-6">@order.Status</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Car</th>
+                                    <th>Quantity</th>
+                                    <th>Unit Price</th>
+                                    <th class="text-end">Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var item in order.Items)
+                                {
+                                    <tr>
+                                        <td><strong>@item.CarName</strong></td>
+                                        <td><span class="badge bg-secondary">@item.Quantity</span></td>
+                                        <td>@item.UnitPrice.ToString("C")</td>
+                                        <td class="text-end"><strong>@item.Subtotal.ToString("C")</strong></td>
+                                        <td>
+                                            <a href="/Cars/Details/@item.CarId" class="btn btn-sm btn-outline-primary">
+                                                <i class="bi bi-eye"></i> View
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot class="table-light">
+                                <tr class="fw-bold">
+                                    <td colspan="3" class="text-end">Order Total:</td>
+                                    <td class="text-end text-primary fs-5">@order.Total.ToString("C")</td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

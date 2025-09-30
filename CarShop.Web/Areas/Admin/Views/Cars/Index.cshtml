@@ -1,0 +1,62 @@
+﻿@model List<CarShop.Web.ViewModels.CarViewModel>
+@{
+    var total = (int?)ViewBag.Total ?? 0;
+    var page = (int?)ViewBag.Page ?? 1;
+    var size = (int?)ViewBag.PageSize ?? 20;
+    int totalPages = (int)Math.Ceiling((double)total / size);
+}
+
+<div class="container py-5">
+    <h1 class="mb-4">Manage Cars <a asp-action="Create" class="btn btn-primary float-end">Add New Car</a></h1>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@car.Name</td>
+                    <td>@car.Brand</td>
+                    <td>@car.Price.ToString("C")</td>
+                    <td>@car.Stock</td>
+                    <td><span class="badge @(car.IsActive ? "bg-success" : "bg-danger")">@(car.IsActive ? "Active" : "Inactive")</span></td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <form asp-action="Delete" asp-route-id="@car.Id" method="post" style="display:inline;" onsubmit="return confirm('Deactivate this car?');">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (totalPages > 1)
+    {
+        <nav>
+            <ul class="pagination">
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == page ? "active" : "")">
+                        <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+</div>

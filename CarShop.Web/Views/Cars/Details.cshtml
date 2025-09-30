@@ -1,0 +1,98 @@
+﻿@model CarDetailViewModel
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <img src="@(string.IsNullOrEmpty(Model.ImagePath) ? "https://placehold.co/800x600?text=" + Model.Name : Model.ImagePath)" 
+                 class="img-fluid rounded shadow" alt="@Model.Name" 
+                 style="@(ViewBag.IsInactive == true ? "opacity: 0.5; filter: grayscale(100%);" : "")" />
+        </div>
+        <div class="col-lg-6">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/Cars">Cars</a></li>
+                    <li class="breadcrumb-item active">@Model.Name</li>
+                </ol>
+            </nav>
+            
+            @if(ViewBag.IsInactive == true)
+            {
+                <div class="alert alert-warning mb-4">
+                    <i class="bi bi-exclamation-triangle"></i>
+                    <strong>This product is no longer active.</strong> 
+                    It may be out of stock or discontinued.
+                </div>
+            }
+            
+            <h1 class="display-4 mb-3">@Model.Name</h1>
+            <p class="lead text-muted mb-4">
+                <i class="bi bi-building"></i> @Model.Brand
+            </p>
+            
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h2 class="text-primary mb-0">@Model.Price.ToString("C")</h2>
+                    <p class="text-muted mb-3">
+                        <i class="bi bi-box-seam"></i> Stock: <strong>@Model.Stock units</strong>
+                    </p>
+                    <p>@Model.Description</p>
+                </div>
+            </div>
+
+            @if(ViewBag.IsInactive == true)
+            {
+                <div class="alert alert-secondary">
+                    <i class="bi bi-info-circle"></i> This product cannot be purchased at this time.
+                </div>
+            }
+            else if(User.IsInRole("Customer"))
+            {
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5><i class="bi bi-bag-check"></i> Add to Cart</h5>
+                        <form method="post" asp-controller="Cart" asp-action="AddToCart">
+                            <input type="hidden" asp-for="Id" name="CarId" />
+                            <div class="mb-3">
+                                <label class="form-label">Quantity</label>
+                                <input type="number" name="Quantity" value="1" min="1" max="@Model.Stock" 
+                                       class="form-control" @(Model.Stock == 0 ? "disabled" : "") />
+                            </div>
+                            <button class="btn btn-primary w-100" type="submit" @(Model.Stock == 0 ? "disabled" : "")>
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5><i class="bi bi-calendar-check"></i> Schedule Test Drive</h5>
+                        <form method="post" asp-controller="TestDrive" asp-action="Create">
+                            <input type="hidden" asp-for="Id" name="CarId" />
+                            <div class="mb-3">
+                                <label class="form-label">Preferred Date & Time</label>
+                                <input type="datetime-local" name="ScheduledAt" class="form-control" required 
+                                       min="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Notes (Optional)</label>
+                                <textarea name="Notes" class="form-control" rows="2" 
+                                          placeholder="Any specific requirements..."></textarea>
+                            </div>
+                            <button class="btn btn-primary w-100" type="submit">
+                                <i class="bi bi-calendar-plus"></i> Book Test Drive
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle"></i> 
+                    <a href="/Account/Login">Login</a> as a customer to purchase or schedule test drives.
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+﻿@model List<CarListViewModel>
+@{
+    var total = (int)ViewBag.Total;
+    var page = (int)ViewBag.Page;
+    var size = (int)ViewBag.PageSize;
+    int totalPages = (int)Math.Ceiling(total / (double)size);
+}
+
+<div class="container py-5">
+    <h1 class="mb-4">Browse Our Collection</h1>
+    
+    <form method="get" class="card shadow-sm mb-4">
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-5">
+                    <input name="search" value="@ViewBag.Search" class="form-control" 
+                           placeholder="Search by name or description..." />
+                </div>
+                <div class="col-md-3">
+                    <input name="brand" value="@ViewBag.Brand" class="form-control" 
+                           placeholder="Filter by brand..." />
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100" type="submit">
+                        <i class="bi bi-search"></i> Search
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <a href="/Cars" class="btn btn-outline-secondary w-100">
+                        <i class="bi bi-x-circle"></i> Clear
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="row g-4">
+        @foreach(var car in Model)
+        {
+            <div class="col-md-4">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="@(string.IsNullOrEmpty(car.ImagePath) ? "https://placehold.co/600x400?text=" + car.Name : car.ImagePath)" 
+                             alt="@car.Name" />
+                        @if(car.Stock > 0)
+                        {
+                            <span class="badge bg-success position-absolute top-0 end-0 m-3">In Stock</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-3">Out of Stock</span>
+                        }
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@car.Name</h5>
+                        <p class="text-muted mb-2">
+                            <i class="bi bi-building"></i> @car.Brand
+                        </p>
+                        <p class="text-truncate small">@car.Description</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="text-primary mb-0">@car.Price.ToString("C")</h4>
+                            <a href="/Cars/Details/@car.Id" class="btn btn-outline-primary">
+                                View Details <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @if(totalPages > 1)
+    {
+        <nav class="mt-5">
+            <ul class="pagination justify-content-center">
+                @for(int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == page ? "active" : "")">
+                        <a class="page-link" href="?page=@i&search=@ViewBag.Search&brand=@ViewBag.Brand">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+</div>

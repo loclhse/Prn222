@@ -1,0 +1,43 @@
+﻿@model List<CarShop.Web.ViewModels.TestDriveViewModel>
+
+<div class="container py-5">
+    <h1>Manage Appointments</h1>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Car</th>
+                <th>Scheduled At</th>
+                <th>Status</th>
+                <th>Notes</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var appt in Model)
+            {
+                <tr>
+                    <td>@appt.CarName</td>
+                    <td>@appt.ScheduledAt.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td><span class="badge @(appt.Status == "Requested" ? "bg-warning" : "bg-success")">@appt.Status</span></td>
+                    <td>@appt.Notes</td>
+                    <td>
+                        @if (appt.Status == "Requested")
+                        {
+                            <form asp-action="Confirm" method="post" style="display:inline;">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@appt.Id" />
+                                <button type="submit" class="btn btn-sm btn-primary">Confirm</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

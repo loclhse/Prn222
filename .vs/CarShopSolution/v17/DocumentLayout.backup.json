@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\areas\\staff\\views\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\areas\\staff\\views\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\areas\\staff\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\areas\\staff\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\areas\\staff\\views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\areas\\staff\\views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\areas\\staff\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\areas\\staff\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\areas\\admin\\views\\cars\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\areas\\admin\\views\\cars\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\areas\\admin\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\areas\\admin\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\areas\\admin\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\areas\\admin\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\areas\\admin\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\areas\\admin\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|c:\\users\\tiend\\desktop\\carshop\\solution - copy\\carshop.web\\carshop.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|CarShop.Web\\CarShop.Web.csproj|solutionrelative:carshop.web\\carshop.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Staff\\Views\\Appointments\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarShop.Web\\Areas\\Staff\\Views\\Appointments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Staff\\Views\\Appointments\\Index.cshtml",
+              "RelativeToolTip": "CarShop.Web\\Areas\\Staff\\Views\\Appointments\\Index.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T06:52:35.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Staff\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "CarShop.Web\\Areas\\Staff\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Staff\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "CarShop.Web\\Areas\\Staff\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T06:52:29.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Staff\\Views\\Inventory\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarShop.Web\\Areas\\Staff\\Views\\Inventory\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Staff\\Views\\Inventory\\Index.cshtml",
+              "RelativeToolTip": "CarShop.Web\\Areas\\Staff\\Views\\Inventory\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T06:52:06.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Staff\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "CarShop.Web\\Areas\\Staff\\Controllers\\InventoryController.cs",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Staff\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "CarShop.Web\\Areas\\Staff\\Controllers\\InventoryController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T06:51:56.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Admin\\Views\\Cars\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarShop.Web\\Areas\\Admin\\Views\\Cars\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Admin\\Views\\Cars\\Edit.cshtml",
+              "RelativeToolTip": "CarShop.Web\\Areas\\Admin\\Views\\Cars\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T06:47:59.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Admin\\Views\\Cars\\Create.cshtml",
+              "RelativeDocumentMoniker": "CarShop.Web\\Areas\\Admin\\Views\\Cars\\Create.cshtml",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Admin\\Views\\Cars\\Create.cshtml",
+              "RelativeToolTip": "CarShop.Web\\Areas\\Admin\\Views\\Cars\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwCoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T06:47:11.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarShop.Web\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
+              "RelativeToolTip": "CarShop.Web\\Areas\\Admin\\Views\\Cars\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwD0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T06:46:27.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Admin\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "CarShop.Web\\Areas\\Admin\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\Areas\\Admin\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "CarShop.Web\\Areas\\Admin\\Controllers\\CarsController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAjwDoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T06:45:38.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CarShop.Web",
+              "DocumentMoniker": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\CarShop.Web.csproj",
+              "RelativeDocumentMoniker": "CarShop.Web\\CarShop.Web.csproj",
+              "ToolTip": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.Web\\CarShop.Web.csproj",
+              "RelativeToolTip": "CarShop.Web\\CarShop.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-30T06:40:22.195Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 657,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

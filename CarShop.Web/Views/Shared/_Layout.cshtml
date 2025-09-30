@@ -1,0 +1,123 @@
+﻿@{ 
+    var isAuth = User?.Identity?.IsAuthenticated ?? false;
+    var isAdmin = User.IsInRole("Admin");
+    var isStaff = User.IsInRole("Staff");
+    var isCustomer = User.IsInRole("Customer");
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarShop - Premium Auto Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <i class="bi bi-car-front-fill"></i> CarShop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Cars"><i class="bi bi-grid-3x3-gap"></i> Browse Cars</a>
+                    </li>
+                    @if(isAuth)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Dashboard"><i class="bi bi-speedometer2"></i> Dashboard</a>
+                        </li>
+                        @if(isCustomer)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Cart"><i class="bi bi-cart"></i> Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Orders/History"><i class="bi bi-bag-check"></i> Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/TestDrive/My"><i class="bi bi-calendar-check"></i> Test Drives</a>
+                            </li>
+                        }
+                        @if(isStaff || isAdmin)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Staff/Inventory"><i class="bi bi-box-seam"></i> Inventory</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Staff/Appointments"><i class="bi bi-calendar2-check"></i> Appointments</a>
+                            </li>
+                        }
+                        @if(isAdmin)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Admin/Cars"><i class="bi bi-gear"></i> Manage Cars</a>
+                            </li>
+                        }
+                    }
+                </ul>
+                <ul class="navbar-nav">
+                    @if(!isAuth)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Account/Login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light btn-sm ms-2" href="/Account/Register">Sign Up</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-person-circle"></i> @User.Identity!.Name
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="/Dashboard">Dashboard</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/Account/Logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        @if(TempData["Message"] != null)
+        {
+            <div class="container mt-3">
+                <div class="alert alert-success alert-dismissible fade show">
+                    <i class="bi bi-check-circle"></i> @TempData["Message"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            </div>
+        }
+        @if(TempData["Error"] != null)
+        {
+            <div class="container mt-3">
+                <div class="alert alert-danger alert-dismissible fade show">
+                    <i class="bi bi-exclamation-circle"></i> @TempData["Error"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            </div>
+        }
+        @RenderBody()
+    </main>
+
+    <footer class="footer mt-5 py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 CarShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

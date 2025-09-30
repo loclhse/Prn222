@@ -1,0 +1,83 @@
+﻿@model List<CartItemViewModel>
+
+<div class="container py-5">
+    <h1 class="mb-4"><i class="bi bi-cart"></i> Shopping Cart</h1>
+    
+    @if(!Model.Any())
+    {
+        <div class="alert alert-info">
+            <i class="bi bi-info-circle"></i> Your cart is empty.
+            <a href="/Cars" class="alert-link">Continue shopping</a>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-lg-8">
+                @foreach(var item in Model)
+                {
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <img src="@(string.IsNullOrEmpty(item.ImagePath) ? "https://placehold.co/150x100" : item.ImagePath)" 
+                                         class="img-fluid rounded" alt="@item.CarName" />
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>@item.CarName</h5>
+                                    <p class="text-muted mb-0">@item.Brand</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <strong>@item.Price.ToString("C")</strong>
+                                </div>
+                                <div class="col-md-2">
+                                    <form method="post" asp-action="UpdateQuantity">
+                                        <input type="hidden" name="carId" value="@item.CarId" />
+                                        <input type="number" name="quantity" value="@item.Quantity" 
+                                               min="1" max="@item.Stock" class="form-control form-control-sm" 
+                                               onchange="this.form.submit()" />
+                                    </form>
+                                </div>
+                                <div class="col-md-2 text-end">
+                                    <div><strong>@item.Subtotal.ToString("C")</strong></div>
+                                    <form method="post" asp-action="RemoveFromCart" class="d-inline">
+                                        <input type="hidden" name="carId" value="@item.CarId" />
+                                        <button class="btn btn-sm btn-outline-danger mt-2" type="submit">
+                                            <i class="bi bi-trash"></i> Remove
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Order Summary</h5>
+                        <hr />
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Subtotal:</span>
+                            <strong>@Model.Sum(x => x.Subtotal).ToString("C")</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Total Items:</span>
+                            <strong>@Model.Sum(x => x.Quantity)</strong>
+                        </div>
+                        <hr />
+                        <form method="post" asp-action="Checkout">
+                            <button class="btn btn-success w-100" type="submit">
+                                <i class="bi bi-credit-card"></i> Proceed to Checkout
+                            </button>
+                        </form>
+                        <a href="/Cars" class="btn btn-outline-secondary w-100 mt-2">
+                            Continue Shopping
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
