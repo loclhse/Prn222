@@ -1,0 +1,101 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated_Code/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Dotnet watch
+**/node_modules/
+**/bower_components/
+
+# Logs
+*.log
+
+# Entity Framework
+Migrations/
+
+# Others
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publish.xml
+
+# Rider
+.idea/
+*.sln.iml
+
+# User secrets
+secrets.json
+
+# Local history for Visual Studio
+.localhistory/
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Test results
+TestResults/
+
+# NCrunch
+.ncrunch*
+*.ncrunch*
+
+# SonarQube
+.sonar/
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# DotCover
+*.dotCover
+
+# Azure Pipelines
+.azure-pipelines/
+
+# Local NuGet packages
+*.nupkg
+
+# Paket dependency manager
+.paket/
+paket-files/
+
+# FAKE build
+.fake/

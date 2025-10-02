@@ -22,7 +22,7 @@ namespace CarShop.DAL
                 cs = configuration.GetConnectionString("DefaultConnection");
             }
 
-            cs ??= "Server=.;Database=CarShopDb;User Id=sa;Password=123;TrustServerCertificate=True;MultipleActiveResultSets=true";
+            cs ??= "Server=.;Database=CarShopDb;User Id=Sa;Password=1234567890;TrustServerCertificate=True;MultipleActiveResultSets=true";
             optionsBuilder.UseSqlServer(cs);
             return new AppDbContext(optionsBuilder.Options);
         }

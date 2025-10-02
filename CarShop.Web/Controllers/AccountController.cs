@@ -3,6 +3,7 @@ using CarShop.Web.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace CarShop.Web.Controllers
 {
@@ -10,11 +11,13 @@ namespace CarShop.Web.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly ILogger<AccountController> _logger;
         
-        public AccountController(UserManager<ApplicationUser> um, SignInManager<ApplicationUser> sm)
+        public AccountController(UserManager<ApplicationUser> um, SignInManager<ApplicationUser> sm, ILogger<AccountController> logger)
         {
             _userManager = um;
             _signInManager = sm;
+            _logger = logger;
         }
         
         [AllowAnonymous]
@@ -30,10 +33,20 @@ namespace CarShop.Web.Controllers
         {
             if (User.Identity?.IsAuthenticated == true)
                 return RedirectToAction("Index", "Dashboard");
-                
+            
             if (!ModelState.IsValid)
+            {
+                foreach (var key in ModelState.Keys)
+                {
+                    var errors = ModelState[key].Errors;
+                    foreach (var error in errors)
+                    {
+                        _logger.LogWarning($"ModelState error for {key}: {error.ErrorMessage}");
+                    }
+                }
                 return View(model);
-                
+            }
+            
             var user = new ApplicationUser
             {
                 UserName = model.Email,
@@ -50,8 +63,11 @@ namespace CarShop.Web.Controllers
             }
             
             foreach (var error in result.Errors)
+            {
+                _logger.LogError($"Register error: {error.Code} - {error.Description}");
                 ModelState.AddModelError("", error.Description);
-                
+            }
+            
             return View(model);
         }
         

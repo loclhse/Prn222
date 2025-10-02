@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.BLL\\CarShop.BLL.csproj": {}
+    "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.BLL\\CarShop.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.BLL\\CarShop.BLL.csproj": {
+    "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.BLL\\CarShop.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.BLL\\CarShop.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.BLL\\CarShop.BLL.csproj",
         "projectName": "CarShop.BLL",
-        "projectPath": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.BLL\\CarShop.BLL.csproj",
-        "packagesPath": "C:\\Users\\tiend\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.BLL\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.BLL\\CarShop.BLL.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiend\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.DAL\\CarShop.DAL.csproj": {
-                "projectPath": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.DAL\\CarShop.DAL.csproj"
+              "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj"
               }
             }
           }
@@ -48,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -83,24 +83,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.DAL\\CarShop.DAL.csproj": {
+    "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.DAL\\CarShop.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj",
         "projectName": "CarShop.DAL",
-        "projectPath": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.DAL\\CarShop.DAL.csproj",
-        "packagesPath": "C:\\Users\\tiend\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiend\\Desktop\\CarShop\\solution - Copy\\CarShop.DAL\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiend\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -127,7 +127,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -180,7 +180,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

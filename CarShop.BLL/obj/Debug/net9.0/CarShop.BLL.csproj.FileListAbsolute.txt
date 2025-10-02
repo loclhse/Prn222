@@ -1,0 +1,17 @@
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\bin\Debug\net9.0\appsettings.json
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\bin\Debug\net9.0\CarShop.BLL.deps.json
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\bin\Debug\net9.0\CarShop.BLL.dll
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\bin\Debug\net9.0\CarShop.BLL.pdb
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\bin\Debug\net9.0\CarShop.DAL.dll
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\bin\Debug\net9.0\CarShop.DAL.pdb
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop.BLL.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop.BLL.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop.BLL.AssemblyInfo.cs
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop.BLL.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop.BLL.sourcelink.json
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop..61BCC6FB.Up2Date
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop.BLL.dll
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\refint\CarShop.BLL.dll
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\CarShop.BLL.pdb
+C:\Users\User\Source\Repos\Prn222\CarShop.BLL\obj\Debug\net9.0\ref\CarShop.BLL.dll
