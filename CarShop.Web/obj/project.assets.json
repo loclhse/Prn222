@@ -5449,23 +5449,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\tiend\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.Web\\CarShop.Web.csproj",
+      "projectUniqueName": "C:\\Users\\tiend\\Desktop\\Prn222\\CarShop.Web\\CarShop.Web.csproj",
       "projectName": "CarShop.Web",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.Web\\CarShop.Web.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.Web\\obj\\",
+      "projectPath": "C:\\Users\\tiend\\Desktop\\Prn222\\CarShop.Web\\CarShop.Web.csproj",
+      "packagesPath": "C:\\Users\\tiend\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tiend\\Desktop\\Prn222\\CarShop.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tiend\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5480,11 +5480,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.BLL\\CarShop.BLL.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.BLL\\CarShop.BLL.csproj"
+            "C:\\Users\\tiend\\Desktop\\Prn222\\CarShop.BLL\\CarShop.BLL.csproj": {
+              "projectPath": "C:\\Users\\tiend\\Desktop\\Prn222\\CarShop.BLL\\CarShop.BLL.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj"
+            "C:\\Users\\tiend\\Desktop\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj": {
+              "projectPath": "C:\\Users\\tiend\\Desktop\\Prn222\\CarShop.DAL\\CarShop.DAL.csproj"
             }
           }
         }
@@ -5499,7 +5499,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -5546,7 +5546,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
